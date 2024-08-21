@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.young-serif-regular {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Stone-900);
+}
+
+.outfit-400 {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit-600 {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.outfit-700 {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+  font-size: 16px;
+  background-color: var(--Stone-100);
+  font-family: 'Outfit', sans-serif;
+  color: var(--Stone-600);
+}
+
+.recipe {
+  background-color: var(--White);
+  padding: 40px;
+  border-radius: 1rem;
+  max-width: 45rem;
+  margin: 120px auto;
+}
+
+.img-con {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.img-con img {
+  width: 100%;
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  padding-block: 1rem;
+}
+.time {
+  /* border: 1px solid; */
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--Rose-50);
+  margin-block: 2rem;
+}
+.time * {
+  margin-block: 0.5rem;
+}
+.time h3 {
+  color: var(--Rose-800);
+  font-size: 1.3rem;
+}
+
+.time li {
+  list-style: disc;
+  list-style-position: outside;
+  margin-left: 1.5rem;
+}
+.time li::marker {
+  color: var(--Rose-800);
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Brown-800);
+  font-size: 1.8rem;
+}
+
+.ingred * {
+  margin-block: 0.5rem;
+}
+.ingred li {
+  list-style: disc;
+  list-style-position: outside;
+  margin-left: 1.5rem;
+}
+.ingred li::marker {
+  color: var(--Brown-800);
+}
+
+.instructions {
+  padding-block: 1rem;
+  border-block: 1px solid var(--Stone-150);
+  margin-block: 2rem;
+}
+
+.instructions * {
+  /* border: 1px solid; */
+  margin-block: 0.5rem;
+}
+.instructions li {
+  list-style: decimal;
+  list-style-position: outside;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+.instructions li::marker {
+  font-weight: 600;
+  color: var(--Brown-800);
+}
+
+.nutri p {
+  /* border: 1px solid; */
+  padding-block: 1rem;
+}
+
+.nutri table {
+  width: 100%;
+  padding: 1rem;
+  /* border: 1px solid red; */
+}
+
+.nutri table tr {
+  border-bottom: 1px solid var(--Stone-150);
+}
+.nutri table tr:last-of-type {
+  border: none;
+}
+
+.nutri table th,
+.nutri table td {
+  text-align: left;
+  padding: 0.5rem 2rem;
+  /* border: 1px solid blue; */
+}
+.nutri table th {
+  font-weight: 600;
+}
+.nutri table td {
+  font-weight: 700;
+  color: var(--Brown-800);
+}
+
+@media (max-width: 375px) {
+  .recipe {
+    min-width: 320px;
+    padding: 170px 30px 30px;
+    border-radius: 0;
+    margin: auto;
+  }
+
+  .img-con {
+    border-radius: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+  }
+  .img-con img {
+    width: 100%;
+  }
+
+  .menu-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
